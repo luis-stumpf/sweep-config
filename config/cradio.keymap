@@ -90,10 +90,10 @@
             &trans     &trans     &trans     &trans     &trans         &kp AMPS   &trans     &trans     &trans     &trans 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  |       │  (       │  )       │  {       │  }       │
-            &trans     &trans     &trans     &trans     &trans         &kp PIPE   &kp RS(N8) &kp RS(N9) &kp RA(N8) &kp RA(N9) 
+            &trans     &trans     &trans     &trans     &trans         &kp RA(N7) &kp RS(N8) &kp RS(N9) &kp RA(N8) &kp RA(N9) 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │  \       │  [       │  ]       │  <       │  >       │
-            &trans     &trans     &trans     &trans     &trans         &kp BSLH   &kp RA(N5) &kp RA(N6) &kp GRAVE  &kp RS(GRAVE)
+            &trans     &trans     &trans     &trans     &trans      kp RA(RS(N7)) &kp RA(N5) &kp RA(N6) &kp GRAVE  &kp RS(GRAVE)
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
