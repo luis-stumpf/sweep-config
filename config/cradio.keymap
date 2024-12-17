@@ -20,6 +20,11 @@
     quick-tap-ms = <200>;
 };
 
+&sk {
+    release-after-ms = <2000>;
+    /delete-property/ ignore-modifiers;
+};
+
 / {
     behaviors {
         ht: hold_tap {
