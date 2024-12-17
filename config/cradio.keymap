@@ -66,7 +66,7 @@
            &trans      &trans     &trans     &trans     &trans         &kp HOME   &kp PG_DN &kp PG_UP   &kp END    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │          │
-            &kp LCTRL  &kp LALT   &kp LGUI   &kp LSHFT  &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp BSPC
+            &sk LCTRL  &sk LALT   &sk LGUI   &sk LSHFT  &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &kp ESC    &trans     &trans     &trans     &trans         &trans     &kp ENTER  &trans     &kp TAB    &kp DEL
@@ -83,7 +83,7 @@
            &trans      &trans     &trans     &trans    &trans          &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &trans     &kp RSHFT  &kp RGUI   &kp RALT   &kp RCTRL
+            &trans     &trans     &trans     &trans     &trans         &trans     &sk RSHFT  &sk RGUI   &sk RALT   &sk RCTRL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
