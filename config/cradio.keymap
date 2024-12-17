@@ -22,14 +22,6 @@
 
 / {
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <EXT SYM>;
-            then-layer = <SYSTEM>;
-        };
-    }; 
-    
     combos {
         compatible = "zmk,combos";
         combo_esc {
@@ -44,7 +36,7 @@
         };
         combo_bspc {
             timeout-ms = <50>;
-            key-positions = <7 8>;
+            key-positions = <27 28>;
             bindings = <&kp BSPC>;
         };
     };
@@ -114,7 +106,7 @@
         //│  0       │  1       │  2       │  3       │  =       │   │          │          │          │          │          │
             &kp N0     &kp N1     &kp N2     &kp N3     &kp RS(N0)      &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                             &trans     &mo SYSTEM     &mo SYSTEM  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
