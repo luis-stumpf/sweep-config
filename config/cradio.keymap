@@ -11,13 +11,18 @@
 #define EXT 1
 #define SYM 2
 #define NUMS 3
-#define SYSTEM 4
+#define DE 4
+#define SYSTEM 5
 
 
 
 &sk {
     release-after-ms = <2000>;
     /delete-property/ ignore-modifiers;
+};
+
+&sl {
+    release-after-ms = <2000>;
 };
 
 / {
@@ -72,13 +77,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans      &kp ESC     &trans    &trans     &trans         &kp HOME   &kp PG_DN &kp PG_UP   &kp END    &trans
+           &trans      &kp ESC    &kp LC(U) &kp LC(A)   &trans         &kp HOME   &kp PG_DN &kp PG_UP   &kp END    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │          │
             &sk LCTRL  &sk LALT   &sk LGUI   &sk LSHFT  &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &kp ESC    &trans     &trans     &trans     &trans         &trans     &kp ENTER  &trans     &kp TAB    &kp DEL
+            &kp ESC    &trans     &trans     &sl DE     &trans         &trans     &kp ENTER  &trans     &kp TAB    &kp DEL
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -115,6 +120,24 @@
             &kp N0     &kp N1     &kp N2     &kp N3     &kp RS(N0)      &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &mo SYSTEM     &mo SYSTEM  &trans
+        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
+            >;
+        };
+
+
+        de_layer {
+            bindings = <
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│          │          │          │          │          │   │          │          │          │          │          │
+           &trans      &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans 
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│  ä       │  ö       │          │ ü        │          │   │          │          │          │          │  ß       │
+            &kp SQT    &kp SEMI  &trans     &kp LBKT    &trans         &trans     &trans     &trans     &trans     &kp MINUS 
+        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
+        //│          │          │          │          │          │   │          │          │          │          │          │
+            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
+        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
+                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
