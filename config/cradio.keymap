@@ -128,11 +128,11 @@
         de_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans      &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans 
+        //│          │          │          │          │          │   │          │  ü       │          │  ö       │          │
+           &trans      &trans     &trans     &trans     &trans         &trans     &kp LBKT   &trans     &kp SEMI   &trans 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  ä       │  ö       │          │ ü        │          │   │          │          │          │          │  ß       │
-            &kp SQT    &kp SEMI  &trans     &kp LBKT    &trans         &trans     &trans     &trans     &trans     &kp MINUS 
+        //│  ä       │  ß       │          │          │          │   │          │          │          │          │          │
+            &kp SQT    &kp MINUS  &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
