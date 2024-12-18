@@ -77,7 +77,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &trans      &kp ESC    &kp LC(U) &kp LC(A)   &trans         &kp HOME   &kp PG_DN &kp PG_UP   &kp END    &trans
+           &trans      &kp ESC    &kp LC(U) &kp LC(D)   &trans         &kp HOME   &kp PG_DN &kp PG_UP   &kp END    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │          │
             &sk LCTRL  &sk LALT   &sk LGUI   &sk LSHFT  &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp BSPC
