@@ -68,7 +68,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ # '      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &sl EXT    &sk LSHFT      &kp SPACE  &sl SYM
+                                             &mo EXT    &kp LSHFT         &kp SPACE  &mo SYM
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -83,7 +83,7 @@
             &sk LCTRL  &sk LALT   &sk LGUI   &sk LSHFT  &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &kp ESC    &trans    &sk LS(LGUI) &sl DE     &trans         &trans     &kp ENTER  &trans     &kp TAB    &kp DEL
+            &kp ESC    &trans     &trans     &sl DE     &trans         &trans     &kp ENTER  &trans     &kp TAB    &kp DEL
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -93,8 +93,8 @@
         sym_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  /       │          │          │          │  =       │   │ ^        │ !        │ ?        │ &        │  $       │      
-            &kp AMPS   &trans     &trans     &trans     &kp RS(N0)   &kp RA(CARET) &kp EXCL &kp RS(MINUS) &kp CARET &kp DLLR
+        //│  /       │          │          │          │          │   │ ^        │ !        │ ?        │ &        │  $       │      
+            &kp AMPS   &trans     &trans     &trans     &trans       &kp RA(CARET) &kp EXCL &kp RS(MINUS) &kp CARET &kp DLLR
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  |       │  (       │  )       │  {       │  }       │   │          │          │          │          │          │
             &kp RA(N7) &kp RS(N8) &kp RS(N9) &kp RA(N8) &kp RA(N9)      &trans     &sk RSHFT  &sk RGUI   &sk RALT   &sk RCTRL
@@ -116,8 +116,8 @@
         //│  7       │  4       │  5       │  6       │  -       │   │          │          │          │          │          │
             &kp AMPS   &kp N4     &kp N5     &kp N6     &kp FSLH        &trans     &trans     &kp LCTRL    &trans     &trans 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  0       │  1       │  2       │  3       │  =       │   │          │          │ , <      │ . >      │          │
-            &kp N0     &kp N1     &kp N2     &kp N3     &kp RS(N0)      &trans     &trans    &kp COMMA  &kp DOT     &trans
+        //│  0       │  1       │  2       │  3       │  =       │   │          │          │          │          │          │
+            &kp N0     &kp N1     &kp N2     &kp N3     &kp RS(N0)      &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &mo SYSTEM     &mo SYSTEM  &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
