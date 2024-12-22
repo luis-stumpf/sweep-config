@@ -77,15 +77,15 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-           &kp N0      &kp N1    &kp N2      &kp N3     &kp N4         &kp N5     &kp N6     &kp N7     &kp N8     &kp N9
+           &trans      &kp ESC    &kp LC(U) &kp LC(D)   &trans         &kp HOME   &kp PG_DN &kp PG_UP   &kp END    &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │          │
-            &sk LCTRL  &sk LALT   &sk LGUI   &kp ESC    &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp BSPC
+            &sk LCTRL  &sk LALT   &sk LGUI   &sk LSHFT  &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &sl DE    &trans     &kp LC(U)   &kp LC(D)  &trans         &kp TAB   &kp ENTER  &trans     &trans     &kp DEL
+            &kp ESC    &trans    &sk LS(LGUI) &sl DE     &trans         &trans     &kp ENTER  &trans     &kp TAB    &kp DEL
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans          &trans     &trans
+                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -93,8 +93,8 @@
         sym_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  /       │  *       │ +        │ -        │  =       │   │ ^        │ !        │ ?        │ &        │  $       │      
-            &kp AMPS &kp RS(RBKT) &kp RBKT   &kp FSLH     &kp RS(N0)   &kp RA(CARET) &kp EXCL &kp RS(MINUS) &kp CARET &kp DLLR
+        //│  /       │          │          │          │  =       │   │ ^        │ !        │ ?        │ &        │  $       │      
+            &kp AMPS   &trans     &trans     &trans     &kp RS(N0)   &kp RA(CARET) &kp EXCL &kp RS(MINUS) &kp CARET &kp DLLR
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  |       │  (       │  )       │  {       │  }       │   │          │          │          │          │          │
             &kp RA(N7) &kp RS(N8) &kp RS(N9) &kp RA(N8) &kp RA(N9)      &trans     &sk RSHFT  &sk RGUI   &sk RALT   &sk RCTRL
