@@ -27,31 +27,44 @@
 
 / {
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <EXT SYM>;
-            then-layer = <NUMS>;
-        };
-    };
 
     combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combe_sys_left {
             timeout-ms = <50>;
-            key-positions = <1 2>;
-            bindings = <&kp ESC>;
+            key-positions = <30 31>;
+            bindings = <&sl NUMS>;
         };
-        combo_enter {
+        combo_sys_right {
             timeout-ms = <50>;
-            key-positions = <7 8>;
-            bindings = <&kp ENTER>;
+            key-positions = <32 33>;
+            bindings = <&sl NUMS>;
         };
-        combo_bspc {
-            timeout-ms = <50>;
-            key-positions = <27 28>;
-            bindings = <&kp BSPC>;
+    };
+
+    behaviors {
+        tesc: tap_dance_esc {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&sl EXT>, <&kp ESC>;
         };
+
+
+        tent: tap_dance_enter {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&sl SYM>, <&kp ENTER>;
+        };
+
+        tsemi: tap_dance_enter {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <100>;
+            bindings = <&kp COMMA>, <&kp LS(COMMA)>;
+        };
+
     };
 
     keymap {
@@ -66,9 +79,9 @@
             &kp A      &kp S      &kp D      &kp F      &kp G          &kp H      &kp J      &kp K      &kp L      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ # '      │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp BSLH
+            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &tsemi     &kp DOT    &kp BSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &sl EXT    &sk LSHFT      &kp SPACE  &sl SYM
+                                             &tesc      &sk LSHFT      &kp SPACE  &tent 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
