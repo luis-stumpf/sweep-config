@@ -46,7 +46,7 @@
         tesc: tap_dance_esc {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             bindings = <&sl EXT>, <&kp ESC>;
         };
 
@@ -54,14 +54,14 @@
         tent: tap_dance_enter {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             bindings = <&sl SYM>, <&kp ENTER>;
         };
 
         tsemi: tap_dance_semi {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             bindings = <&kp COMMA>, <&kp LS(COMMA)>;
         };
 
