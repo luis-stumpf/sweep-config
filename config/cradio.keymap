@@ -36,49 +36,49 @@
         combo_cmd_right {
             timeout-ms = <50>;
             key-positions = <12 13>;
-            bindings = <&sl LGUI>;
+            bindings = <&sk LGUI>;
         };
 
         combo_opt_right {
             timeout-ms = <50>;
             key-positions = <11 13>;
-            bindings = <&sl LALT>;
+            bindings = <&sk LALT>;
         };
 
         combo_ctrl_right {
             timeout-ms = <50>;
             key-positions = <10 13>;
-            bindings = <&sl LCTRL>;
+            bindings = <&sk LCTRL>;
         };
 
         combo_cmd_ctrl_right {
             timeout-ms = <50>;
             key-positions = <10 12 13>;
-            bindings = <&sl LGUI(LCTRL)>;
+            bindings = <&sk LGUI(LCTRL)>;
         };
 
         combo_cmd_left {
             timeout-ms = <50>;
             key-positions = <16 17>;
-            bindings = <&sl RGUI>;
+            bindings = <&sk RGUI>;
         };
 
         combo_opt_left {
             timeout-ms = <50>;
             key-positions = <16 18>;
-            bindings = <&sl RALT>;
+            bindings = <&sk RALT>;
         };
 
         combo_ctrl_left {
             timeout-ms = <50>;
             key-positions = <16 19>;
-            bindings = <&sl RCTRL>;
+            bindings = <&sk RCTRL>;
         };
 
         combo_cmd_ctrl_left {
             timeout-ms = <50>;
             key-positions = <16 17 19>;
-            bindings = <&sl RGUI(RCTRL)>;
+            bindings = <&sk RGUI(RCTRL)>;
         };
     };
 
