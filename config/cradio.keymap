@@ -98,7 +98,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ # '      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &lt 5 BSLH
         //╰──────────┴──────────┴──────────┼───30─────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt NAV ESC  &sk LSHIFT   &sk SPACE &lt NUMS ENTER
+                                            &lt NAV ESC  &sk LSHIFT   &kp SPACE &lt NUMS ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
