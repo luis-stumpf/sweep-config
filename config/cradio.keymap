@@ -80,7 +80,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │ ^        │ !        │ ?        │ &        │  $       │
-            &trans     &trans     &trans     &trans     &trans        &kp CARET &kp EXCL &kp RS(MINUS) &kp CARET &kp DLLR
+            &trans     &trans     &trans     &trans     &trans        &kp GRAVE &kp EXCL &kp RS(MINUS) &kp CARET &kp DLLR
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
             &trans     &trans     &trans     &trans     &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp EQUAL
