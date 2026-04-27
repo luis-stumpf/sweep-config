@@ -80,13 +80,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │ ^        │ !        │ ?        │ &        │  $       │
-            &trans     &trans     &trans     &trans     &trans        &kp CARET &kp EXCL &kp RS(MINUS) &kp CARET &kp DLLR
+            &trans     &trans     &trans     &trans     &trans        &kp RA(CARET) &kp EXCL &kp RS(MINUS) &kp CARET &kp DLLR
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  ;       │
             &trans     &trans     &trans     &trans     &trans         &kp LARW   &kp DARW   &kp UARW   &kp RARW   &kp EQUAL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │ @        │ %        │ "        │ ~        │          │
-        &trans     &trans     &trans     &trans     &trans         &kp RA(Q)  &kp PRCNT  &kp AT     &kp RA(RBKT)  &kp TAB
+            &trans     &trans     &trans     &trans     &trans         &kp RA(L)  &kp PRCNT  &kp AT     &kp RA(N)  &kp TAB
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -96,14 +96,14 @@
         nums_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  *       │  7       │  8       │  9       │  +       │   │  /       │   <      │   >      │          │          │
-           &kp RS(RBKT) &kp N7    &kp N8     &kp N9     &kp RBKT        &kp AMPS  &kp NUBS  &kp LS(NUBS) &sl FN     &sl DE 
+        //│  *       │  7       │  8       │  9       │  +       │   │  /       │ , <      │ . >      │          │          │
+           &kp RS(RBKT) &kp N7    &kp N8     &kp N9     &kp RBKT        &kp AMPS  &kp COMMA  &kp DOT    &sl FN     &sl DE 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  7       │  4       │  5       │  6       │  -       │   │  |       │  (       │  )       │  {       │  }       │  
-            &kp AMPS   &kp N4     &kp N5     &kp N6     &kp FSLH       &kp RA(NUMBS) &kp RS(N8) &kp RS(N9) &kp RA(N7) &kp RA(NO)  
+            &kp AMPS   &kp N4     &kp N5     &kp N6     &kp FSLH       &kp RA(N7) &kp RS(N8) &kp RS(N9) &kp RA(N8) &kp RA(N9)  
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  0       │  1       │  2       │  3       │  =       │   │  \       │  [       │  ]       │  <       │  >       │
-            &kp N0     &kp N1     &kp N2     &kp N3     &kp RS(N0) &kp RA(MINUS) HRMR(RA(N8), RA(N9), NUBS,   RS(NUBS))
+            &kp N0     &kp N1     &kp N2     &kp N3     &kp RS(N0) &kp RA(RS(N7)) HRMR(RA(N5), RA(N6), GRAVE,   RS(GRAVE))
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &kp DEL    &kp BSPC         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
